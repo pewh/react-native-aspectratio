@@ -11,7 +11,7 @@ Image aspect ratio utilities.
 ## Install
 
 ```
-npm install aspectratio --save
+npm install pewh/react-native-aspectratio --save
 ```
 
 ## API

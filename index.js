@@ -1,5 +1,3 @@
-var deprecate = require('util').deprecate;
-
 exports.crop = function(x, y, r) {
   var orient = r.split('!')[1];
   var ratio  = r.split('!')[0].split(':').sort();
@@ -45,8 +43,6 @@ exports.crop = function(x, y, r) {
     ];
   }
 };
-
-exports.fixed = deprecate(exports.crop, 'aspect.fixed: Use aspect.crop instead');
 
 exports.resize = function(x, y, xMax, yMax) {
   if (xMax && yMax) {
